@@ -27,3 +27,18 @@
 
 	4)使用cherry-pick命令提交转移
 	git cherry-pick <commitHash>
+
+4.修改最新的一条Commit记录信息
+	1)cd 到被导入项目根目录
+
+	2)git commit --amend
+
+	3)输入i进入插入模式
+
+	4)修改Commit记录信息
+
+	5)按Esc退出
+
+	6)输入:wq保存
+
+	7)git push -f
