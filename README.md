@@ -1,11 +1,11 @@
 # Git-Notes
 
-1.删除Commit(n为向前删除的Commit次数):
+1.删除Commit(删除当前分支最新的一条Commit):
 
 	1)本地删除Commit记录
-	git reset --hard HEAD^n
+	git reset --hard HEAD^
 
-	2）向远程仓库提交强制申请
+	2)向远程仓库提交强制申请
 	git push origin HEAD -f
 
 2.从其他远程仓库导入项目
