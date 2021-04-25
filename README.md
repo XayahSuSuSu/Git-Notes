@@ -46,3 +46,22 @@
 	6)输入:wq保存
 
 	7)git push -f
+
+5.导入其他仓库的分支
+
+	1)cd 到被导入项目根目录
+
+	2)将该库加为远程仓库
+	git remote add target <gitUrl(导入仓库)>
+
+	3)将远程代码抓取到本地
+	git fetch target
+
+	4)切换到远程仓库对应分支
+	git checkout <对应分支名称>
+	
+	5)基于该分支创建本地分支
+	git checkout -b <本地分支名称>
+	
+	6)推送当前分支并建立与远程上游的跟踪
+	git push --set-upstream origin <本地分支名称>
