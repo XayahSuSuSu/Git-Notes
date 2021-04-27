@@ -65,3 +65,28 @@
 	
 	6)推送当前分支并建立与远程上游的跟踪
 	git push --set-upstream origin <本地分支名称>
+
+6.修改历史Commit记录
+
+	1)列出历史Commit列表(n为项数)
+	git rebase -i HEAD~n
+
+	2)输入i进入插入模式
+
+	3)将被修改Commit前面的 "pick" 修改为 "edit"
+
+	4)按Esc退出
+
+	5)输入:wq保存
+
+	6)git commit --amend
+
+	7)输入i进入插入模式
+
+	8)修改Commit记录信息
+
+	9)按Esc退出
+
+	10)输入:wq保存
+
+	11)git push -f
