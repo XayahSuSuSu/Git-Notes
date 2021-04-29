@@ -89,4 +89,27 @@
 
 	10)输入:wq保存
 
-	11)git push -f
+	11)git rebase --continue
+
+	12)git push -f
+
+7.修改历史Commit提交时间
+
+	1)列出历史Commit列表(n为项数)
+	git rebase -i HEAD~n
+
+	2)输入i进入插入模式
+
+	3)将被修改Commit前面的 "pick" 修改为 "edit"
+
+	4)按Esc退出
+
+	5)输入:wq保存
+
+	6)GIT_COMMITTER_DATE="2021-04-29T11:00:00" git commit --amend --date="2021-04-29T11:00:00"
+
+	7)输入:wq保存
+
+	8)git rebase --continue
+
+	9)git push -f
