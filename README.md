@@ -113,3 +113,14 @@
 	8)git rebase --continue
 
 	9)git push -f
+
+8.撤回上次Commit并保留修改的文件(在Commit时恢复上次Commit信息):
+
+	1)撤回上次Commit
+	git reset --soft HEAD^
+
+	2)Commit并恢复上次Commit信息
+	git commit -C HEAD@{1}
+
+	3)向远程仓库提交强制申请
+	git push origin HEAD -f
